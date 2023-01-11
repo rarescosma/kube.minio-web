@@ -1,5 +1,6 @@
 #################################
-FROM golang:1.14-alpine as builder
+ARG HUB=docker.io
+FROM ${HUB}/library/golang:1.14-alpine as builder
 
 WORKDIR /goapp
 
